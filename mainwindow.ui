@@ -18,7 +18,9 @@
     <item>
      <layout class="QHBoxLayout" name="mainLayout">
       <item>
-       <layout class="QVBoxLayout" name="gameLayout"/>
+       <widget class="GolWidget" name="gol" native="true">
+        <layout class="QVBoxLayout" name="gameLayout"/>
+       </widget>
       </item>
       <item>
        <layout class="QVBoxLayout" name="setLayout">
@@ -145,6 +147,14 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GolWidget</class>
+   <extends>QWidget</extends>
+   <header>golwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

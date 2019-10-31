@@ -6,14 +6,9 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-    GolWidget mygame(new GolWidget(this));
+    GolWidget mygame(this);
     ui->setupUi(this);
-    // gameLayout->addWidget(mygame);
 }
-
-
-
-
 
 MainWindow::~MainWindow()
 {
